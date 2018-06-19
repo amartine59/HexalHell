@@ -28,7 +28,7 @@
   src: url(/css/fonts/Lato-Light.ttf);
 }
 @font-face {
-  font-family: myriad-pro-regular;
+  font-family: myriad-regular;
   src: url(/css/fonts/MyriadPro-Regular.otf);
 }
 
@@ -44,6 +44,12 @@ h3,
 p,
 hr {
   margin: 0;
+}
+.j-end {
+  justify-self: end;
+}
+.j-center {
+  justify-self: center;
 }
 
 .header-menu {
@@ -115,7 +121,6 @@ hr {
   display: inline-block;
   width: 100%;
 }
-
 /*Creating the hexagons*/
 .hexal-container {
   background-image: url(/images/0.png);
@@ -178,6 +183,11 @@ hr {
   background-image: url(/images/12.png);
 }
 /*Organizing all the hexagons*/
+.m-line {
+  background-color: rgb(229, 233, 236);
+  border: 0px;
+  height: 1px;
+}
 .images-container {
   display: flex;
   flex-flow: row wrap;
@@ -206,12 +216,93 @@ hr {
 }
 .vertical-line {
   height: 108px;
-  width: 0px;
+  width: 1px;
+  background-color: rgb(229, 233, 236);
+  border: 0px;
   align-self: center;
 }
 
 .m-right {
   margin-right: 6px;
+}
+/*Setting some order to the line and the nav below the images*/
+.main-footer {
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: -20px;
+  margin-bottom: 12px;
+}
+.slider {
+  margin-bottom: 30px;
+  align-self: flex-start;
+  display: flex;
+}
+.slider-item {
+  display: block;
+  height: 8px;
+  width: 8px;
+  font-size: 1pt;
+  background-color: rgb(221, 210, 198);
+  margin-right: 5px;
+  cursor: pointer;
+}
+.checked {
+  background-color: rgb(139, 135, 132);
+}
+.slider-item:hover {
+  background-color: rgb(139, 135, 132);
+}
+
+/*About the author*/
+.author-info {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  background-color: var(--highlightedgreen);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.author-content {
+  display: grid;
+  grid-template-columns: 0fr 3fr;
+  grid-column-gap: 20px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.author-desc {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+.author-bio {
+  text-align: justify;
+  font-family: lato-light;
+  font-size: 9pt;
+  line-height: 1.5;
+  color: var(--textwhite);
+  margin-bottom: 40px;
+}
+.author-name {
+  font-family: myriad-regular;
+  font-size: 24pt;
+  color: var(--textwhite);
+}
+.author-job {
+  font-family: myriad-regular;
+  font-size: 14pt;
+  color: var(--specialgreen);
+  margin-bottom: 20px;
+}
+.media-icons {
+  align-self: flex-end;
+}
+.vl-2 {
+  height: 315px;
+  border: 0px;
+  width: 1px;
+  background-color: rgb(33, 157, 133);
 }
 .author-image {
   background-image: url(/images/smith.png);
