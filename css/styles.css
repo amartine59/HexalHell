@@ -51,6 +51,9 @@ hr {
 .j-center {
   justify-self: center;
 }
+.a-center {
+  align-self: center !important;
+}
 
 .header-menu {
   display: grid;
@@ -297,6 +300,10 @@ hr {
 }
 .media-icons {
   align-self: flex-end;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 150px;
 }
 .vl-2 {
   height: 315px;
@@ -304,6 +311,24 @@ hr {
   width: 1px;
   background-color: rgb(33, 157, 133);
 }
+.media-icons i {
+  color: rgb(5, 174, 151);
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wg-color {
+  background-color: rgb(164, 221, 211);
+}
+.ltr-green {
+  background-color: rgb(107, 203, 192);
+}
+.l-green {
+  background-color: rgb(125, 209, 199);
+}
+
 .author-image {
   background-image: url(/images/smith.png);
 }
