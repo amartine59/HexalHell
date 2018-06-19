@@ -1,0 +1,116 @@
+/*Setting up variables for the colors*/
+:root {
+  --backgroundblack: rgb(50, 50, 50);
+  --headerwhite: rgb(255, 255, 255);
+  --highlightedgreen: rgb(46, 179, 152);
+  --specialgreen: rgb(32, 129, 109);
+  --textwhite: rgb(215, 252, 245);
+  --textlightgrey: rgb(224, 224, 224);
+  --textdarkgrey: rgb(190, 190, 190);
+  --textdarkergrey: rgb(69, 69, 69);
+}
+
+/*Setting up all the fonts*/
+@font-face {
+  font-family: lato-bold;
+  src: url(/css/fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: lato-regular;
+  src: url(/css/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: lato-black;
+  src: url(/css/fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: lato-light;
+  src: url(/css/fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: myriad-pro-regular;
+  src: url(/css/fonts/MyriadPro-Regular.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+p,
+hr {
+  margin: 0;
+}
+
+.header-menu {
+  display: grid;
+  background-color: var(--backgroundblack);
+  grid-template-columns: 1fr 3fr 1fr;
+  position: relative;
+  margin-bottom: 15px;
+}
+.header-menu::before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.header-menu::before {
+  border-width: 30px;
+  border-left-width: 45px;
+  border-right-width: 45px;
+  border-top-width: 24px;
+  margin-left: -63px;
+  border-top-color: var(--backgroundblack);
+}
+.main-menu {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 3px;
+}
+.arrow-image {
+  height: 52px;
+  margin-right: 38px;
+}
+.menu-item {
+  text-decoration: none;
+  font-family: lato-light;
+  font-size: 10pt;
+  font-weight: 400;
+  color: var(--headerwhite);
+  margin-right: 25px;
+}
+.s-margin {
+  margin-right: 38px;
+}
+.menu-item:hover {
+  color: var(--highlightedgreen);
+}
+.line-container {
+  display: grid;
+  grid-auto-columns: 410px 130px 410px;
+  grid-template-areas: "line-1 . line-2";
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.l-1 {
+  grid-area: line-1;
+}
+.l-2 {
+  grid-area: line-2;
+}
+.header-end-line {
+  display: inline-block;
+  width: 100%;
+}
