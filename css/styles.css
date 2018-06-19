@@ -103,6 +103,7 @@ hr {
   grid-template-areas: "line-1 . line-2";
   padding-left: 30px;
   padding-right: 30px;
+  margin-bottom: 80px;
 }
 .l-1 {
   grid-area: line-1;
@@ -114,11 +115,7 @@ hr {
   display: inline-block;
   width: 100%;
 }
-.vertical-line {
-  height: 108px;
-  width: 0px;
-  grid-area: vr;
-}
+
 /*Creating the hexagons*/
 .hexal-container {
   background-image: url(/images/0.png);
@@ -187,7 +184,35 @@ hr {
   justify-content: center;
   align-items: center;
 }
+.first-row {
+  display: flex;
+  align-self: center;
+  flex-flow: row wrap;
+}
+.second-row {
+  display: flex;
+  align-self: stretch;
+  flex-flow: row wrap;
+  position: relative;
+  top: -40px;
+}
+.third-row {
+  display: flex;
+  align-self: center;
+  flex-flow: row wrap;
+  justify-content: start;
+  position: relative;
+  top: -80px;
+}
+.vertical-line {
+  height: 108px;
+  width: 0px;
+  align-self: center;
+}
 
+.m-right {
+  margin-right: 6px;
+}
 .author-image {
   background-image: url(/images/smith.png);
 }
