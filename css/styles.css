@@ -99,7 +99,7 @@ hr {
 }
 .line-container {
   display: grid;
-  grid-auto-columns: 410px 130px 410px;
+  grid-template-columns: 43% 11.5% 43%;
   grid-template-areas: "line-1 . line-2";
   padding-left: 30px;
   padding-right: 30px;
@@ -113,4 +113,81 @@ hr {
 .header-end-line {
   display: inline-block;
   width: 100%;
+}
+.vertical-line {
+  height: 108px;
+  width: 0px;
+  grid-area: vr;
+}
+/*Creating the hexagons*/
+.hexal-container {
+  background-image: url(/images/0.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  visibility: hidden;
+  transform: rotate(120deg);
+  height: 210px;
+  width: 195px;
+}
+.hex-1 {
+  overflow: hidden;
+  width: 195px;
+  height: 100%;
+  transform: rotate(-60deg);
+}
+.hex-2 {
+  width: 195px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(/images/0.png);
+  visibility: visible;
+  transform: rotate(-60deg);
+}
+.img-1 {
+  background-image: url(/images/1.png);
+}
+.img-2 {
+  background-image: url(/images/2.png);
+}
+.img-3 {
+  background-image: url(/images/3.png);
+}
+.img-4 {
+  background-image: url(/images/4.png);
+}
+.img-5 {
+  background-image: url(/images/5.png);
+}
+.img-6 {
+  background-image: url(/images/6.png);
+}
+.img-7 {
+  background-image: url(/images/7.png);
+}
+.img-8 {
+  background-image: url(/images/8.png);
+}
+.img-9 {
+  background-image: url(/images/9.png);
+}
+.img-10 {
+  background-image: url(/images/10.png);
+}
+.img-11 {
+  background-image: url(/images/11.png);
+}
+.img-12 {
+  background-image: url(/images/12.png);
+}
+/*Organizing all the hexagons*/
+.images-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.author-image {
+  background-image: url(/images/smith.png);
 }
