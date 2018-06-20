@@ -409,6 +409,9 @@ hr {
   height: 150px;
   padding-top: 16px;
 }
+input[type="file"] {
+  padding-top: 16px;
+}
 .footer-btn {
   background-color: var(--highlightedgreen);
   color: var(--headerwhite);
@@ -430,6 +433,7 @@ hr {
 }
 .c-green {
   color: var(--highlightedgreen);
+  margin-right: 5px;
 }
 .contact-details {
   margin-bottom: 10px;
