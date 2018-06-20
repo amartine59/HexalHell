@@ -332,3 +332,120 @@ hr {
 .author-image {
   background-image: url(/images/smith.png);
 }
+/*Styling the last section*/
+.contact-section {
+  background-color: var(--backgroundblack);
+  padding: 12px 30px;
+}
+.contact-lines {
+  background-color: rgb(43, 43, 43);
+  height: 1px;
+  border: 0;
+  width: 100%;
+}
+.contact-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 0.9fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 23px;
+  padding-top: 55px;
+  padding-bottom: 53px;
+}
+.contact-heading {
+  grid-area: heading;
+  grid-row: 1/2;
+  grid-column: 2/4;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+.c-form {
+  grid-area: form;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-flow: column wrap;
+}
+.extra-info {
+  grid-area: aside;
+  grid-column: 4/5;
+}
+.contact-title {
+  font-family: myriad-regular;
+  font-size: 24pt;
+  color: var(--textlightgrey);
+}
+.contact-title-desc {
+  font-family: myriad-regular;
+  font-size: 15pt;
+  color: var(--textdarkgrey);
+  text-align: start;
+}
+.contact-detail-desc {
+  line-height: 2;
+  text-align: justify;
+  margin-bottom: 44px;
+}
+.font-lato {
+  font-family: lato-regular;
+  font-size: 10pt;
+  color: rgb(149, 149, 149);
+}
+
+.white-b-text {
+  color: var(--textlightgrey);
+  font-weight: 700;
+}
+.g-background {
+  background-color: rgb(69, 69, 69);
+  border: 0;
+  height: 40px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  min-width: -webkit-fill-available;
+}
+.t-area {
+  resize: none;
+  height: 150px;
+  padding-top: 16px;
+}
+.footer-btn {
+  background-color: var(--highlightedgreen);
+  color: var(--headerwhite);
+  text-decoration: none;
+  font-family: myriad-regular;
+  font-size: 11pt;
+  height: 37px;
+  width: 90px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aside-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.c-green {
+  color: var(--highlightedgreen);
+}
+.contact-details {
+  margin-bottom: 10px;
+}
+/*Styling the footer*/
+footer {
+  background-color: rgb(34, 34, 34);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+
+.footer-text {
+  font-family: myriad-regular;
+  font-size: 10pt;
+  color: var(--textdarkergrey);
+}
